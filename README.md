@@ -1,5 +1,4 @@
 <div style="font-size: 13px;">
----
 
 # 📌 Interpretable Retail Demand Forecasting using Machine Learning & Statistical Models
 
