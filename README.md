@@ -1,3 +1,4 @@
+<div style="font-size: 13px;">
 ---
 
 # 📌 Interpretable Retail Demand Forecasting using Machine Learning & Statistical Models
@@ -264,4 +265,4 @@ If this repository helped you, please consider **starring the project**!
 
 ---
 
-
+</div>
