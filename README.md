@@ -210,14 +210,25 @@ These findings help with:
 
 ```
 Retail_Demand_Forecasting/
-│── data/
-│── notebook/
-│   ├── 01_EDA.ipynb
-│   ├── 02_Feature_Engineering.ipynb
-│   ├── 03_Modeling.ipynb
-│   ├── 04_Evaluation.ipynb
-│   ├── 05_Interpretability_SHAP.ipynb
-│── README.md
+│
+├── data/
+│   ├── features.xlsx
+│   ├── stores.xlsx
+│   ├── test.xlsx
+│   ├── train.xlsx
+│
+├── notebook/
+│   ├── .venv/
+│   ├── images/
+│   │     ├── weekly_sales_store1_dept1.png
+│   │     ├── shap-summary1.png
+│   │     ├── shap-summary2.png
+│   │     ├── shap-summary3.png
+│   │
+│   ├── 01_EDA.ipynb            
+│   ├── README.md               
+│
+└── (no root README.md)
 ```
 
 ---
