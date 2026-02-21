@@ -1,17 +1,17 @@
 <div style="font-size: 13px;">
 
-# 📌 Interpretable Retail Demand Forecasting using Machine Learning & Statistical Models
+<h1>📌 Interpretable Retail Demand Forecasting using Machine Learning & Statistical Models</h1>
 
 A complete end-to-end retail demand forecasting system built using **Time-Series Machine Learning, ARIMA/SARIMA models, XGBoost, and SHAP-based interpretability**.
 
 ---
 
-## 🚀 Project Overview
+ <h2> 🚀 Project Overview </h2>
 
 This project forecasts **weekly retail demand** using the **Walmart Sales Forecasting Dataset**.
 The objective is to **compare baseline, statistical, and machine learning models** and identify the most accurate and interpretable forecasting approach for real-world retail planning.
 
-### 🔄 Workflow Summary
+<h3> 🔄 Workflow Summary </h3>
 
 * 📊 Exploratory Time-Series Analysis
 * 🧮 Feature Engineering (lags, rolling windows, seasonality extraction)
@@ -28,11 +28,11 @@ The objective is to **compare baseline, statistical, and machine learning models
 
 ---
 
-## 🗂️ Dataset
+<h2> 🗂️ Dataset </h2>
 
 **Source:** Walmart Weekly Sales Forecasting Dataset (Kaggle)
 
-### Features Used
+<h3> Features Used </h3>
 
 * `Store`
 * `Dept`
@@ -48,13 +48,13 @@ After filtering:
 
 ---
 
-## 📊 1. Exploratory Data Analysis (EDA)
+<h2> 📊 1. Exploratory Data Analysis (EDA) </h2>
 
-### Weekly Sales Time Series (Actual Visualization)
+<h3> Weekly Sales Time Series (Actual Visualization) </h3>
 
 <img src="images/weekly_sales_store1_dept1.png" width="600">
 
-### Key Observations
+<h3> Key Observations </h3>
 
 * Seasonal spikes around holidays
 * No strong long-term trend
@@ -69,22 +69,22 @@ Sales patterns indicate:
 
 ---
 
-## 🛠️ 2. Feature Engineering
+<h2> 🛠️ 2. Feature Engineering </h2>
 
 To convert the time series into a supervised ML problem:
 
-### 📌 Lag Features
+<h3> 📌 Lag Features </h3>
 
 * `Lag_1` (last week)
 * `Lag_2`
 * `Lag_4` (1 month prior)
 * `Lag_12` (seasonal memory)
 
-### 📌 Rolling Window Features
+<h3> 📌 Rolling Window Features </h3>
 
 * `Rolling_Mean_4` — smooths short-term fluctuations
 
-### 📌 Date Features
+<h3> 📌 Date Features </h3>
 
 * `Month`
 * `Week`
@@ -93,7 +93,7 @@ These features enable machine learning models to capture temporal dependencies e
 
 ---
 
-## 🧪 3. Train–Test Strategy
+<h2> 🧪 3. Train–Test Strategy </h2>
 
 * **Train–Test Split:** 80% train, 20% test
 * **No shuffling** → avoids time leakage
@@ -101,23 +101,23 @@ These features enable machine learning models to capture temporal dependencies e
 
 ---
 
-## 🤖 4. Models Implemented
+<h2> 🤖 4. Models Implemented </h2>
 
-### 🔹 Naive Baseline
+<h3> 🔹 Naive Baseline </h3>
 
 Predicts
 **Next week = Last week (Lag_1)**
 Works well because of strong autocorrelation.
 
-### 🔹 Linear Regression
+<h3> 🔹 Linear Regression </h3>
 
 Simple model; struggles on nonlinear spikes.
 
-### 🔹 Random Forest
+<h3> 🔹 Random Forest </h3>
 
 Captures nonlinearity better than linear models.
 
-### 🔹 XGBoost (🔥 Best Model)
+<h3> 🔹 XGBoost (🔥 Best Model) </h3>
 
 Gradient boosting with tuned hyperparameters.
 Best performance on **all** metrics:
@@ -126,14 +126,14 @@ Best performance on **all** metrics:
 * Lowest MAE
 * Lowest MAPE
 
-### 🔹 ARIMA & SARIMA
+<h3> 🔹 ARIMA & SARIMA </h3>
 
 SARIMA failed due to inconsistent seasonality.
 ARIMA improved but still far below ML models.
 
 ---
 
-## 📈 5. Model Performance Comparison
+<h2> 📈 5. Model Performance Comparison </h2>
 
 | Model              | RMSE     | MAE     | MAPE      |
 | ------------------ | -------- | ------- | --------- |
@@ -150,11 +150,11 @@ Winner: **XGBoost**
 
 ---
 
-## 🔍 6. SHAP Interpretability (Explainable ML)
+<h2> 🔍 6. SHAP Interpretability (Explainable ML) </h2>
 
 SHAP was applied to explain XGBoost predictions.
 
-### Key Insights
+<h3> Key Insights </h3>
 
 * **Lag_1** dominates (~57% importance)
 * **Lag_2** also important
@@ -165,7 +165,7 @@ SHAP was applied to explain XGBoost predictions.
 Conclusion:
 Retail demand is **short-memory driven**, not long-term seasonal.
 
-### SHAP Plot
+<h3> SHAP Plot </h3>
 
 <h3>SHAP Summary Plot</h3>
 <img src="images/shap-summary1.png" width="550">
@@ -178,7 +178,7 @@ Retail demand is **short-memory driven**, not long-term seasonal.
 
 ---
 
-## 🧾 7. Business Insights
+<h2> 🧾 7. Business Insights </h2>
 
 ✔ Recent demand (Lag_1, Lag_2) is the strongest predictor
 ✔ Spikes caused by promotions/holidays are inconsistent
@@ -193,7 +193,7 @@ These findings help with:
 
 ---
 
-## 🧱 8. Tech Stack
+<h2> 🧱 8. Tech Stack </h2>
 
 * Python
 * Pandas
@@ -206,7 +206,7 @@ These findings help with:
 
 ---
 
-## 📂 Project Structure
+<h2> 📂 Project Structure </h2>
 
 ```
 Retail_Demand_Forecasting/
@@ -233,7 +233,7 @@ Retail_Demand_Forecasting/
 
 ---
 
-## 🧠 9. Key Learnings
+<h2> 🧠 9. Key Learnings </h2>
 
 * Time-series forecasting requires **data-aware splitting**
 * Lag features outperform complex statistical models
@@ -243,7 +243,7 @@ Retail_Demand_Forecasting/
 
 ---
 
-## 🏁 10. Final Summary
+<h2> 🏁 10. Final Summary </h2>
 
 This project demonstrates a fully interpretable retail forecasting workflow covering:
 
@@ -258,7 +258,7 @@ This project demonstrates a fully interpretable retail forecasting workflow cove
 
 ---
 
-## ⭐ Support
+<h2> ⭐ Support </h2>
 
 If this repository helped you, please consider **starring the project**!
 
