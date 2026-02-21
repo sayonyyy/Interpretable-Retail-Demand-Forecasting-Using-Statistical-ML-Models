@@ -1,6 +1,3 @@
-Here you go, Sayony — a **clean, polished, copy-paste-ready GitHub README** version of your project.
-Images are added as placeholders so your repo looks professional from day one.
-
 ---
 
 # 📌 Interpretable Retail Demand Forecasting using Machine Learning & Statistical Models
@@ -172,12 +169,12 @@ Retail demand is **short-memory driven**, not long-term seasonal.
 
 ### SHAP Plot
 
-![SHAP Summary Plot (Global Feature Importance)](notebook/images/shap-summary1.png)
+![SHAP Summary Plot (Global Feature Importance)](images/shap-summary1.png)
 
 
-![SHAP Bar Plot (Simple Global Importance)](notebook/images/shap-summary2.png)
+![SHAP Bar Plot (Simple Global Importance)](images/shap-summary2.png)
 
-![SHAP Force Plot - Decision Plot Alternative (Local Explanation)](notebook/images/shap-summary2.png)
+![SHAP Force Plot - Decision Plot Alternative (Local Explanation)](images/shap-summary2.png)
 ---
 
 ## 🧾 7. Business Insights
