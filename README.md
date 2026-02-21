@@ -52,7 +52,7 @@ After filtering:
 
 ### Weekly Sales Time Series (Actual Visualization)
 
-<img src="images/weekly_sales_store1_dept1.png" width="800">
+<img src="images/weekly_sales_store1_dept1.png" width="600">
 
 ### Key Observations
 
