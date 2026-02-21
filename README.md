@@ -50,18 +50,16 @@ After filtering:
 
 ## 📊 1. Exploratory Data Analysis (EDA)
 
+### Weekly Sales Time Series (Actual Visualization)
+
+<img src="notebook/images/weekly_sales_store1_dept1.png" width="800">
+
 ### Key Observations
 
 * Seasonal spikes around holidays
 * No strong long-term trend
 * Stable sales between holiday peaks
 * High short-term autocorrelation
-
-### Visual Summary (Placeholder)
-
-![Image](https://srjit.github.io/sales-time-series-analysis/images/Validation-plot.png)
-
-![Image](https://raw.githubusercontent.com/liamarguedas/walmart-sales-forecast/main/Summary-Charts/Yearly%20weekly%20sales%20by%20month.png)
 
 Sales patterns indicate:
 
@@ -169,12 +167,15 @@ Retail demand is **short-memory driven**, not long-term seasonal.
 
 ### SHAP Plot
 
-![SHAP Summary Plot (Global Feature Importance)](images/shap-summary1.png)
+<h3>SHAP Summary Plot</h3>
+<img src="images/shap-summary1.png" width="550">
 
+<h3>SHAP Bar Plot</h3>
+<img src="images/shap-summary2.png" width="450">
 
-![SHAP Bar Plot (Simple Global Importance)](images/shap-summary2.png)
+<h3>SHAP Local Decision Plot</h3>
+<img src="images/shap-summary3.png" width="800">
 
-![SHAP Force Plot - Decision Plot Alternative (Local Explanation)](images/shap-summary2.png)
 ---
 
 ## 🧾 7. Business Insights
